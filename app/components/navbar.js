@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <div classname="">
-        <div className="p-2 w-full fixed bg-gradient-to-b md:ml-64 from-cyan-950 md:justify-center md:item-center flex to-gray-600">
+        <div className="p-2  bg-gradient-to-b md:ml-64 from-cyan-950 md:justify-center md:item-center flex to-gray-600">
           <button
             aria-controls="cta-button-sidebar"
             type="button"
