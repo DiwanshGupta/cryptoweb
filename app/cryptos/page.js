@@ -40,7 +40,7 @@ function Cryptocurrencies() {
         setLoading(true);
         setsearching(false);
       } catch (error) {
-        console.error(error);
+        // console.error(error);
       }
     };
     datafetch();
