@@ -34,7 +34,7 @@ function Homepage() {
         setcarddata(info.data.data.coins);
         setLoading(true);
       } catch (error) {
-        console.error(error);
+        // console.error(error);
       }
     };
     datafetch();
