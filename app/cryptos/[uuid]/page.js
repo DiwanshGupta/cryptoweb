@@ -39,7 +39,7 @@ function Contentdata({ params }) {
       try {
         const info = await axios.request(options);
         setcoindata(info.data.data.coin);
-        console.log(info.data.data.coin);
+      
         setLoading(true);
       } catch (error) {
         console.error(error);
