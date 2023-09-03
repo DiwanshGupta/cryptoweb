@@ -35,7 +35,7 @@ function News() {
         setobjdata(info.data.value);
         setLoading(true);
         setsearching(false);
-        console.log(info.data.value);
+        
       } catch (error) {
         console.error(error);
       }
