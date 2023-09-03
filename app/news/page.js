@@ -37,7 +37,7 @@ function News() {
         setsearching(false);
         
       } catch (error) {
-        console.error(error);
+        // console.error(error);
       }
     };
     datafetch();
