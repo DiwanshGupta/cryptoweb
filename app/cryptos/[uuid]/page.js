@@ -42,7 +42,7 @@ function Contentdata({ params }) {
       
         setLoading(true);
       } catch (error) {
-        console.error(error);
+        // console.error(error);
       }
     };
     datafetch();
