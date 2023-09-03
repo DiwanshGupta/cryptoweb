@@ -43,7 +43,7 @@ function Homepage() {
     <>
       {" "}
       {isloading ? (
-        <main className="h-full p-5">
+        <main className="h-full mt-5 p-5">
           <div className="text-3xl text-slate-200 font-semibold">
             Global Crypto status
           </div>
