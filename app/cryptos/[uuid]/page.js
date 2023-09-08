@@ -61,7 +61,7 @@ function Contentdata({ params }) {
           </div>
           <div>
             <select
-              className="w-14 border-none appearance-none outline-none  py-1 px-2 bg-blue-400 rounded-md text-gray-900"
+              className="w-14 border-none appearance-none outline-none  py-1 px-2 bg-yellow-400 rounded-md text-gray-600"
               value={selectedTime} // Set the value of the select element to selectedTime
               onChange={handleTimeChange}
             >
