@@ -46,8 +46,9 @@ function Linechart({ id, time }) {
         label: "price in usd",
         data: coinprice,
         fill: false,
-        backgroundcolor: "#36A2EB",
-        bordercolor: "36A2EB",
+        backgroundColor: "white", // Corrected property name
+        borderColor: "yellow", // Corrected property name
+        color: "white",
       },
     ],
   };
@@ -56,6 +57,8 @@ function Linechart({ id, time }) {
       y: [
         {
           beginAtZero: true, // Starts the scale at zero
+          color: "white",
+
           // Maximum value on the y-axis
         },
       ],
