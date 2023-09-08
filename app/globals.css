@@ -10,13 +10,15 @@
 }
 
 .tablebg {
-  background: linear-gradient(315deg, #48bb78, #3182ce, #9f7aea);
+    background: linear-gradient(315deg, #2d322f6d, #dee43040, #e5bd0b32);
+
   background-size: 400% 400%;
 
   animation: AnimationName 9s ease infinite;
 }
 .table2bg {
-  background: linear-gradient(315deg, #f687b3, #9f7aea, #6366f1);
+   background: linear-gradient(315deg, #2d322f6d, #dee43040, #e5bd0b32);
+
   background-size: 400% 400%;
 
   animation: AnimationName 9s ease infinite;
