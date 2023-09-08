@@ -112,7 +112,7 @@ function Contentdata({ params }) {
                       <span className="flex font-bold items-center">
                         <BsCurrencyDollar className="mr-1" />{" "}
                         {millify(coindata["24hVolume"])}
-                      </span>
+                      </span> 
                     </td>
                   </tr>{" "}
                   <tr className="">
