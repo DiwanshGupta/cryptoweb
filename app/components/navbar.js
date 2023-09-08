@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ImCross } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
-import { BsCurrencyExchange } from "react-icons/bs";
+import { BsCurrencyExchange } from "react-icons/bs"; 
 import { FaExchangeAlt, FaRegNewspaper } from "react-icons/fa";
 import Link from "next/link";
 const Navbar = () => {
