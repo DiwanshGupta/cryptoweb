@@ -4,17 +4,11 @@
 /* Navigation Menu - Background */
 
 .anigrademate {
-  background: linear-gradient(315deg, #072b5e, #070e34, #0b1f3d);
-  background-size: 400% 400%;
-
-  animation: AnimationName 9s ease infinite;
+  background-image: url(../public/photo-1621504450181-5d356f61d307.jpeg);
+  background-size: cover;
+  height: 100vh;
 }
-.navbgauto {
-  background: linear-gradient(80deg, #8696e7, #112f68, #005a80);
-  background-size: 400% 400%;
 
-  animation: AnimationName 9s ease infinite;
-}
 .tablebg {
   background: linear-gradient(315deg, #48bb78, #3182ce, #9f7aea);
   background-size: 400% 400%;
