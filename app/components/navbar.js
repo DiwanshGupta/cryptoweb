@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div classname="">
+      <div className="">
         <div className="p-2  bg-gradient-to-b md:ml-64 from-cyan-950 md:justify-center md:item-center flex to-gray-600">
           <button
             aria-controls="cta-button-sidebar"
@@ -33,9 +33,9 @@ const Navbar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
