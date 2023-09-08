@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <div className="">
-        <div className="p-2  bg-gradient-to-b md:ml-64 from-cyan-950 md:justify-center md:item-center flex to-gray-600">
+        <div className="p-2 bg-black bg-opacity-80 md:ml-64 md:justify-center md:item-center flex">
           <button
             aria-controls="cta-button-sidebar"
             type="button"
@@ -52,7 +52,7 @@ const Navbar = () => {
           } `}
           aria-label="Sidebar"
         >
-          <div className="h-full px-3 py-4 md:py-6 overflow-y-auto navbgauto ">
+          <div className="h-full px-3 bg-black bg-opacity-80 py-4 md:py-6 overflow-y-auto navbgauto ">
             <ul className="space-y-5 md:space-y-8 font-medium">
               <button
                 aria-controls="cta-button-sidebar"
