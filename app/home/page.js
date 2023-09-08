@@ -47,41 +47,51 @@ function Homepage() {
           <div className="text-3xl text-slate-200 font-semibold">
             Global Crypto status
           </div>
-          <table className="m-auto  w-full ">
+          <table className="m-auto w-full">
             <tbody className="flex justify-between flex-row">
-              <tr className="flex text-white p-3 flex-col w-2/4 ">
+              <tr className="flex text-white p-3 flex-col w-2/4">
                 <td>Total Cryptos.</td>
-                {maindata.data && maindata.data.stats
-                  ? millify(maindata.data.stats.totalCoins)
-                  : " "}
+                <td>
+                  {maindata.data && maindata.data.stats
+                    ? millify(maindata.data.stats.totalCoins)
+                    : " "}
+                </td>
               </tr>
-              <tr className="flex text-white  p-3 flex-col w-2/4">
+              <tr className="flex text-white p-3 flex-col w-2/4">
                 <td>Total Exchange</td>
-                {maindata.data && maindata.data.stats
-                  ? millify(maindata.data.stats.totalExchanges)
-                  : ""}
+                <td>
+                  {maindata.data && maindata.data.stats
+                    ? millify(maindata.data.stats.totalExchanges)
+                    : ""}
+                </td>
               </tr>
             </tbody>
-            <tbody className="flex text-white flex-row ">
-              <tr className="flex  p-3 flex-col  w-2/4">
+            <tbody className="flex text-white flex-row">
+              <tr className="flex p-3 flex-col w-2/4">
                 <td>Total Market cap</td>
-                {maindata.data && maindata.data.stats
-                  ? millify(maindata.data.stats.totalMarketCap)
-                  : ""}
+                <td>
+                  {maindata.data && maindata.data.stats
+                    ? millify(maindata.data.stats.totalMarketCap)
+                    : ""}
+                </td>
               </tr>
-              <tr className="flex  p-3 flex-col  w-2/4">
+              <tr className="flex p-3 flex-col w-2/4">
                 <td className="">Total 24h Volume</td>
-                {maindata.data && maindata.data.stats
-                  ? millify(maindata.data.stats.total24hVolume)
-                  : ""}
+                <td>
+                  {maindata.data && maindata.data.stats
+                    ? millify(maindata.data.stats.total24hVolume)
+                    : ""}
+                </td>
               </tr>
             </tbody>
-            <tbody className="flex  text-white flex-row ">
-              <tr className="flex  p-3 flex-col ">
-                <td className=" ">Total Markets</td>
-                {maindata.data && maindata.data.stats
-                  ? millify(maindata.data.stats.totalMarkets)
-                  : ""}
+            <tbody className="flex text-white flex-row">
+              <tr className="flex p-3 flex-col">
+                <td className="">Total Markets</td>
+                <td>
+                  {maindata.data && maindata.data.stats
+                    ? millify(maindata.data.stats.totalMarkets)
+                    : ""}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -94,16 +104,16 @@ function Homepage() {
             ))}
           </div>
           <div>
-            <div class="buttons ">
+            <div className="buttons ">
               <Link href="/cryptos">
-                <button class="blob-btn">
+                <button className="blob-btn">
                   Show more
-                  <span class="blob-btn__inner">
-                    <span class="blob-btn__blobs">
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
-                      <span class="blob-btn__blob"></span>
+                  <span className="blob-btn__inner">
+                    <span className="blob-btn__blobs">
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
                     </span>
                   </span>
                 </button>
