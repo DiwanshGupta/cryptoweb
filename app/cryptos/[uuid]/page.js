@@ -17,12 +17,12 @@ import Linechart from "@/app/components/linechart";
 function Contentdata({ params }) {
   const [coindata, setcoindata] = useState([]);
   const [isloading, setLoading] = useState(false);
-  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedTime, setSelectedTime] = useState("3h");
   useEffect(() => {
     AOS.init();
   }, []);
   const id = params.uuid;
-  const timeOptions = ["0", "3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
+  const timeOptions = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
   const handleTimeChange = (e) => {
     // Update selectedTime when the user selects a new option
     setSelectedTime(e.target.value);
