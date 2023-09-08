@@ -56,7 +56,7 @@ function Contentdata({ params }) {
           <div className="flex justify-center  relative  font-bold  items-center sm:text-5xl text-3xl  bg-gradient-to-r from-red-500 via-pink-500 to-blue-500 text-transparent bg-clip-text animate-gradient">
             {coindata.name}-({coindata.symbol})
           </div>
-          <div className="text-gray-800 justify-center flex ">
+          <div className="text-white font-semibold justify-center flex ">
             {coindata.name} in US Dollars
           </div>
           <div>
@@ -219,17 +219,17 @@ function Contentdata({ params }) {
               <div
                 data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom"
-                className="text-3xl font-semibold bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient"
+                className="text-3xl  font-semibold bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient"
               >
                 {" "}
                 What is {coindata.name}?
               </div>
-              <div className="text-xl text-gray-600">
+              <div className="text-xl  font-semibold text-gray-800">
                 {coindata.description && HTMLReactParser(coindata.description)}
               </div>
             </div>
             <div
-              className="relative w-80 bg-gradient-to-r from-gray-400  to-blue-400  text-slate-600 sm:w-96 shadow-2xl overflow-x-auto  rounded-lg"
+              className="relative w-80 tablebg  text-slate-600 sm:w-96 shadow-2xl overflow-x-auto  rounded-lg"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
