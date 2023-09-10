@@ -1,39 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Navigation Menu - Background */
 
+/* body background start */
 .anigrademate {
   background-image: url(../public/photo-1621504450181-5d356f61d307.jpeg);
   background-size: cover;
-
 }
+/* body back groound end */
 
-.tablebg {
-    background: linear-gradient(315deg, #2d322f6d, #dee43040, #e5bd0b32);
-
-  background-size: 400% 400%;
-
-  animation: AnimationName 9s ease infinite;
-}
-.table2bg {
-   background: linear-gradient(315deg, #2d322f6d, #dee43040, #e5bd0b32);
-
-  background-size: 400% 400%;
-
-  animation: AnimationName 9s ease infinite;
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 47%;
-  }
-  50% {
-    background-position: 100% 54%;
-  }
-  100% {
-    background-position: 0% 47%;
-  }
-}
+/* Navbar start  */
 .navigation {
   /* critical sizing and position styles */
   width: 100%;
@@ -52,14 +28,12 @@
 
 /* Navigation Menu - List items */
 .nav-item {
-  /* non-critical appearance styles */
   width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
 }
 
 .nav-item a {
-  /* non-critical appearance styles */
   display: block;
   padding: 1em;
   background: linear-gradient(
@@ -81,6 +55,34 @@
     rgba(75, 20, 20, 0.65) 100%
   );
 }
+/* navbar end */
+/* card css start */
+.sizecard {
+  display: flex;
+  padding: auto;
+  width: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem; /* equivalent to py-2 in Tailwind */
+}
+.moving:hover {
+  animation: rotation 2s infinite linear;
+}
+.moving {
+  background-size: contain;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* card end  */
+
+/* gradient for text start  */
 .animate-gradient {
   background-size: 300%;
   -webkit-animation: animatedgradient 6s ease infinite alternate;
@@ -99,6 +101,8 @@
     background-position: 0% 50%;
   }
 }
+/* gradient for text end  */
+/* button home start */
 .lbtn {
   border: 3px solid;
   border-image: repeating-linear-gradient(905deg, #e7570a, #037ced) 8;
@@ -238,30 +242,9 @@
     transform: translateZ(0) scale(1.4);
   }
 }
-.sizecard {
-  display: flex;
-  padding: auto;
-  width: auto;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0.5rem; /* equivalent to py-2 in Tailwind */
-}
-.moving:hover {
-  animation: rotation 2s infinite linear;
-}
-.moving {
-  background-size: contain;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
+/* button home end */
 
+/* loader start */
 .loader {
   width: 10em;
   height: 10em;
@@ -316,11 +299,11 @@
     transform: rotate(calc(360deg * var(--direction)));
   }
 }
-
+/* loader end */
 .box {
   position: relative;
 }
-
+/* searching css start  */
 .input {
   width: 350px;
   background: linear-gradient(to bottom, #15333a, #666666);
@@ -346,6 +329,35 @@
     opacity: 1;
   }
 }
+/* searching css end */
 .container {
   display: flex;
 }
+
+/* table backgraond start*/
+.tablebg {
+  background: linear-gradient(315deg, #2d322f6d, #d4db0ca2, #e5bd0b74);
+
+  background-size: 400% 400%;
+
+  animation: AnimationName 9s ease infinite;
+}
+.table2bg {
+  background: linear-gradient(315deg, #2d322f6d, #dee43071, #e5bd0b74);
+
+  background-size: 400% 400%;
+
+  animation: AnimationName 9s ease infinite;
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+/* table background end  */
