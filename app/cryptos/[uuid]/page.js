@@ -39,10 +39,10 @@ function Contentdata({ params }) {
       try {
         const info = await axios.request(options);
         setcoindata(info.data.data.coin);
-      
+
         setLoading(true);
       } catch (error) {
-         console.error(error);
+        console.error(error);
       }
     };
     datafetch();
@@ -74,10 +74,10 @@ function Contentdata({ params }) {
           </div>
           <Linechart id={id} time={selectedTime} />
           <div className="flex justify-center flex-col m-auto items-center">
-            <div className="text-2xl font-semibold  bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient">
+            <div className="text-2xl md:text-4xl font-semibold  bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient">
               Over view state of {coindata.name}
             </div>
-            <div className="relative w-80 text-slate-300 sm:w-96 overflow-x-auto shadow-md rounded-lg">
+            <div className="relative w-80 text-white sm:w-96 overflow-x-auto shadow-md rounded-lg">
               <table className="w-full text-base tablebg ">
                 <tbody>
                   <tr className="">
@@ -112,7 +112,7 @@ function Contentdata({ params }) {
                       <span className="flex font-bold items-center">
                         <BsCurrencyDollar className="mr-1" />{" "}
                         {millify(coindata["24hVolume"])}
-                      </span> 
+                      </span>
                     </td>
                   </tr>{" "}
                   <tr className="">
@@ -151,8 +151,8 @@ function Contentdata({ params }) {
             <div className="text-3xl m-5 font-semibold flex items-center bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient">
               Other states of {coindata.name}
             </div>
-            <div className="relativew-80 text-slate-300  sm:w-96 overflow-x-auto shadow-md rounded-lg">
-              <table className="w-full text-base table2bg">
+            <div className="relativew-80 text-white table2bg  sm:w-96 overflow-x-auto shadow-md rounded-lg">
+              <table className="w-full text-base ">
                 <tbody>
                   <tr className="font-semibold ">
                     <th className="px-6 py-4">
@@ -215,16 +215,16 @@ function Contentdata({ params }) {
                 </tbody>
               </table>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col bg-yellow-400 my-3 p-4 bg-opacity-30 rounded-2xl">
               <div
                 data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom"
-                className="text-3xl  font-semibold bg-gradient-to-r from-yellow-600 via-green-600 to-orange-500 text-transparent bg-clip-text animate-gradient"
+                className="text-3xl  font-semibold bg-gradient-to-r from-blue-600 via-red-600 to-violet-500  text-transparent bg-clip-text animate-gradient"
               >
                 {" "}
                 What is {coindata.name}?
               </div>
-              <div className="text-xl  font-semibold text-gray-800">
+              <div className="text-xl  font-semibold text-white">
                 {coindata.description && HTMLReactParser(coindata.description)}
               </div>
             </div>
