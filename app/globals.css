@@ -336,14 +336,16 @@
 
 /* table backgraond start*/
 .tablebg {
-  background: linear-gradient(315deg, #2d322f6d, #d4db0ca2, #e5bd0b74);
+    background: linear-gradient(315deg, #2d322f6d, #d4db0ca2, #e5bd0b74);
+
 
   background-size: 400% 400%;
 
   animation: AnimationName 9s ease infinite;
 }
 .table2bg {
-  background: linear-gradient(315deg, #2d322f6d, #dee43071, #e5bd0b74);
+    background: linear-gradient(315deg, #2d322f6d, #d4db0ca2, #e5bd0b74);
+
 
   background-size: 400% 400%;
 
