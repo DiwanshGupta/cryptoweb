@@ -66,7 +66,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/home"
-                  className="flex items-center lbtn text-xl p-2 text-gray-900  dark:text-white group"
+                  className="flex items-center lbtn text-xl p-2 text-white group"
                 >
                   <AiFillHome />
                   <span className="flex-1 ml-3  whitespace-nowrap">Home</span>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/cryptos"
-                  className="flex items-center p-2 lbtn text-gray-900 text-xl  dark:text-white  group"
+                  className="flex items-center p-2 lbtn  text-xl text-white  group"
                 >
                   <BsCurrencyExchange />
                   <span className="flex-1 ml-3 whitespace-nowrap">Cryptos</span>
@@ -85,7 +85,7 @@ const Navbar = () => {
               <li className="overbtn">
                 <Link
                   href="/news"
-                  className="flex items-center overbtn p-2 lbtn text-gray-900 text-xl  dark:text-white  group"
+                  className="flex items-center overbtn p-2 lbtn  text-xl text-white  group"
                 >
                   <FaRegNewspaper />
                   <span className="flex-1 ml-3 whitespace-nowrap">News</span>
